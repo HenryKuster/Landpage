@@ -1,0 +1,231 @@
+
+/* Reset de estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Estilo para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(40deg,rgb(59, 2, 2) 35%, rgb(1, 1, 53));
+    margin: 0;
+    padding: 0;
+    height: 1000px;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+#carinhafeliz {
+    width: 50px;
+    height: 50px;
+}
+
+.cabecalholinks {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.cabecalholinks a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.cabecalholinks a:hover {
+    color: black;
+}
+
+
+
+/* Estilo para o conteúdo principal */
+main {
+    padding: 20px;
+
+}
+
+.nome {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sobre {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    justify-content: left;
+
+}
+.cursos {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    justify-content: right;
+
+}
+.interesse {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    justify-content: flex-end;
+
+}
+
+p {
+    font-size: 17px;
+    line-height: 1.5;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+
+/* Estilo para os links de contato */
+.contato {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    justify-content: flex-end;
+    width: 100%;
+    margin-left: 20px;
+}
+
+
+/* Botão copiado da net */
+.btn {
+    --border-color: linear-gradient(-45deg, #ffae00, #7e03aa, #00fffb);
+    --border-width: .125em;
+    --curve-size: .5em;
+    --blur: 30px;
+    --bg: #080312;
+    --color: #afffff;
+    color: var(--color);
+      /* use position: relative; so that BG is only for .btn */
+    position: relative;
+    isolation: isolate;
+    display: inline-grid;
+    place-content: center;
+    padding: .5em 1.5em;
+    font-size: 17px;
+    border: 0;
+    text-transform: uppercase;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, .6);
+    clip-path: polygon(
+              /* Top-left */
+              0% var(--curve-size),
+  
+              var(--curve-size) 0,
+              /* top-right */
+              100% 0,
+              100% calc(100% - var(--curve-size)),
+  
+              /* bottom-right 1 */
+              calc(100% - var(--curve-size)) 100%,
+              /* bottom-right 2 */
+              0 100%);
+    transition: color 250ms;
+  }
+  
+  .btn::after,
+  .btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+  }
+  
+  .btn::before {
+    background: var(--border-color);
+    background-size: 300% 300%;
+    animation: move-bg7234 5s ease infinite;
+    z-index: -2;
+  }
+  
+  @keyframes move-bg7234 {
+    0% {
+      background-position: 31% 0%
+    }
+  
+    50% {
+      background-position: 70% 100%
+    }
+  
+    100% {
+      background-position: 31% 0%
+    }
+  }
+  
+  .btn::after {
+    background: var(--bg);
+    z-index: -1;
+    clip-path: polygon(
+              /* Top-left */
+              var(--border-width) 
+              calc(var(--curve-size) + var(--border-width) * .5),
+  
+              calc(var(--curve-size) + var(--border-width) * .5) var(--border-width),
+  
+              /* top-right */
+              calc(100% - var(--border-width)) 
+              var(--border-width),
+  
+              calc(100% - var(--border-width)) 
+              calc(100% - calc(var(--curve-size) + var(--border-width) * .5)),
+  
+              /* bottom-right 1 */
+              calc(100% - calc(var(--curve-size) + var(--border-width) * .5)) calc(100% - var(--border-width)),
+              /* bottom-right 2 */
+              var(--border-width) calc(100% - var(--border-width)));
+    transition: clip-path 500ms;
+  }
+  
+  .btn:where(:hover, :focus)::after {
+    clip-path: polygon(
+                  /* Top-left */
+                  calc(100% - var(--border-width)) 
+  
+                  calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+      
+                  calc(100% - var(--border-width))
+  
+                  var(--border-width),
+      
+                  /* top-right */
+                  calc(100% - var(--border-width))
+  
+                   var(--border-width),
+      
+                  calc(100% - var(--border-width)) 
+  
+                  calc(100% - calc(var(--curve-size) + var(--border-width) * .5)),
+      
+                  /* bottom-right 1 */
+                  calc(100% - calc(var(--curve-size) + var(--border-width) * .5)) 
+                  calc(100% - var(--border-width)),
+  
+                  /* bottom-right 2 */
+                  calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
+                  calc(100% - var(--border-width)));
+    transition: 200ms;
+  }
+  
+  .btn:where(:hover, :focus) {
+    color: #fff;
+  }
+/* Fim */
+.btn a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    transition: color 0.3s;
+}
