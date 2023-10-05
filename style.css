@@ -8,78 +8,59 @@
 
 /* Estilo para o corpo da página */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman';
     background-image: linear-gradient(40deg,rgb(59, 2, 2) 35%, rgb(1, 1, 53));
-    margin: 0;
-    padding: 0;
-    height: 1000px;
+    padding: 20px;
 }
 
 /* Estilo para o cabeçalho */
 header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 20px;
-}
 
-#carinhafeliz {
-    width: 50px;
-    height: 50px;
 }
+.fotoperfil{
+  display: flex;
+  justify-content: center;
 
-.cabecalholinks {
-    list-style: none;
-    display: flex;
-    gap: 40px;
 }
-
-.cabecalholinks a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: color 0.3s;
+.fotoperfil img{
+  width: 150px;
+  height: 200px;
+  border-radius: 20%;
 }
-
-.cabecalholinks a:hover {
-    color: black;
+.nome {
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  margin-left: 200px;
 }
-
 
 
 /* Estilo para o conteúdo principal */
 main {
     padding: 20px;
-
-}
-
-.nome {
-    font-size: 18px;
-    color: rgb(255, 255, 255);
-    margin-bottom: 20px;
-    text-align: center;
 }
 
 .sobre {
     font-size: 16px;
     color: rgb(255, 255, 255);
     margin-bottom: 10px;
-    justify-content: left;
-
+    width: 300px;
+    margin-left: 20px;
 }
 .cursos {
     font-size: 16px;
     color: rgb(255, 255, 255);
-    margin-bottom: 10px;
-    justify-content: right;
-
+    width: 300px;
+    margin-left: 20px;
 }
 .interesse {
     font-size: 16px;
     color: rgb(255, 255, 255);
     margin-bottom: 10px;
-    justify-content: flex-end;
+    width: 600px;
+    margin-left: 20px;
 
 }
 
