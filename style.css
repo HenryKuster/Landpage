@@ -8,8 +8,8 @@
 
 /* Estilo para o corpo da página */
 body {
-    font-family: 'Times New Roman';
-    background-image: linear-gradient(40deg,rgb(59, 2, 2) 35%, rgb(1, 1, 53));
+    font-family: Verdana;
+    background-image: linear-gradient(40deg, #e09f3e 35%, #f9c74f);
     padding: 20px;
 }
 
@@ -22,59 +22,66 @@ header {
 }
 .fotoperfil{
   display: flex;
-  justify-content: center;
-
+  margin-left: 40px;
 }
 .fotoperfil img{
-  width: 150px;
-  height: 200px;
-  border-radius: 20%;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
 }
 .nome {
   font-size: 18px;
-  color: rgb(255, 255, 255);
   margin-left: 200px;
 }
 
 
 /* Estilo para o conteúdo principal */
 main {
-    padding: 20px;
+    padding: 50px;
 }
 
 .sobre {
     font-size: 16px;
-    color: rgb(255, 255, 255);
     margin-bottom: 10px;
     width: 300px;
     margin-left: 20px;
 }
 .cursos {
     font-size: 16px;
-    color: rgb(255, 255, 255);
     width: 300px;
     margin-left: 20px;
 }
 .interesse {
     font-size: 16px;
-    color: rgb(255, 255, 255);
     margin-bottom: 10px;
     width: 600px;
     margin-left: 20px;
 
 }
-
-p {
-    font-size: 17px;
-    line-height: 1.5;
-    color: rgb(255, 255, 255);
-    margin-bottom: 20px;
+h1{
+  color: #001233;
+  font-family: Verdana;
+  margin-bottom: 5px;
+  text-decoration: underline;
 }
-
+p {
+  font-family: Verdana;
+  font-size: 17px;  
+  color: #002855;
+  margin-bottom: 20px;
+}
+ul{
+  padding-top: 5px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  list-style: none;
+  font-family: Verdana;
+  font-size: 17px;  
+  color: #002855;
+}
 /* Estilo para os links de contato */
 .contato {
     font-size: 16px;
-    color: rgb(255, 255, 255);
     margin-bottom: 10px;
     justify-content: flex-end;
     width: 100%;
@@ -98,6 +105,7 @@ p {
     place-content: center;
     padding: .5em 1.5em;
     font-size: 17px;
+    margin-right: 25px;
     border: 0;
     text-transform: uppercase;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, .6);
